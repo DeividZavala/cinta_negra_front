@@ -1,0 +1,17 @@
+extends layout
+
+block content
+	h1= title
+	p Welcome to #{title}
+
+	div(ng-controller='mycontroller as mc')
+		{{mc}}
+		p Search
+		input(ng-model='search.name',placeholder='nombre')
+		input(ng-model='search.app',placeholder='apellido')
+		select(ng-model='search.location')
+			option mex
+			option ny
+		div(class='container')
+			card-user(data='user' ng-repeat='user in mc.users | filter:search')
+

@@ -1,0 +1,36 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.container:after{
+	clear: both;
+	content: ' ';
+	display: block;
+}
+
+div .card{
+	float: left;
+	padding: 10px;
+	color: #555;
+	width: 200px;
+	border: 1px solid #eee;
+	margin: 10px;
+	font-size: 13px;
+}
+
+div .card h1{
+	color: #888;
+	font-weight: normal;
+	font-size: 18px;
+}
+.btn{
+	background: #303F9F;
+	width: 100%;
+	border: none;
+	color: white;
+	border-radius: 2px;
+}
